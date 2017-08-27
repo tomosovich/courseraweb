@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-inverse {
-  background-color: #512DA8;
+  background-color: #512da8;
 }
 
 /* aboutus.html styles */
@@ -40,7 +40,7 @@ body {
   padding: 25px 0px 25px 0px;
 }
 
-.reservation {
+/* .reservation {
   align-self: auto;
   margin: auto;
 }
@@ -57,4 +57,10 @@ body {
 .test {
   margin-left: 40px;
   margin-right: 40px;
+} */
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
