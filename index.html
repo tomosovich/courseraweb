@@ -104,160 +104,155 @@
     </header>
     <!-- /Jumbotron Header -->
     <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col-sm col-md flex-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza
-                            <span class="badge badge-danger">HOT</span>
-                            <span class="badge badge-pill badge-default">$4.99</span></h2>
-                        <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+        <div class="row row-content">
+            <div class="col">
+                <div class="carousel slide" data-ride="carousel" id="mycarousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/uthappizza.png" alt="pizza" class="d-block img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Uthappizza
+                                    <span class="badge badge-danger">HOT</span>
+                                    <span class="badge badge-pill badge-default">$4.99</span></h2>
+                                <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/buffet.png" alt="buffet" class="d-block img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/alberto.png" alt="alberto" class="d-block img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                                </p>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
                     </div>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col-sm-8 col-md-9">
-                <div class="media">
-                    <div class="media-body">
-                        <h2 class="mt-0 mb-1">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
-                        </p>
-
-                    </div>
-                    <img src="img/buffet.png" alt="buffet" class="mt-0 ml-3">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col-sm col-md flex-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
-                    <div class="media-body">
-                        <h2 class="mt-0">Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Assignment Code -->
-
-        <div class="row row-content" id="Reservation">
-            <div class="col-md-2 hidden-sm"></div>
-            <div class="col-sm col-md-8">
-                <div class="card center-block" style="float:none">
-                    <h3 class="card-header bg-warning text-white">Make A Reservation</h3>
-                    <div class="card-block">
-                        <div class="form-group row">
-                            <label for="numberGuests" class="col-md-2 col-form-label">Number of Guests</label>
-                            <div class="col-md-10">
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
+    <!-- Reservation Form-->
+    <div class="row row-content" id="Reservation">
+        <div class="col-md-2 hidden-sm"></div>
+        <div class="col-sm col-md-8">
+            <div class="card center-block" style="float:none">
+                <h3 class="card-header bg-warning text-white">Make A Reservation</h3>
+                <div class="card-block">
+                    <div class="form-group row">
+                        <label for="numberGuests" class="col-md-2 col-form-label">Number of Guests</label>
+                        <div class="col-md-10">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
                     </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
                     </label>
-                                </div>
-                                <div class="form-check form-check-inline disabled">
-                                    <label class="form-check-label">
+                            </div>
+                            <div class="form-check form-check-inline disabled">
+                                <label class="form-check-label">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 3
                     </label>
-                                </div>
-                                <div class="form-check form-check-inline disabled">
-                                    <label class="form-check-label">
+                            </div>
+                            <div class="form-check form-check-inline disabled">
+                                <label class="form-check-label">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 4
                     </label>
-                                </div>
-                                <div class="form-check form-check-inline disabled">
-                                    <label class="form-check-label">
+                            </div>
+                            <div class="form-check form-check-inline disabled">
+                                <label class="form-check-label">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 5
                     </label>
-                                </div>
-                                <div class="form-check form-check-inline disabled">
-                                    <label class="form-check-label">
+                            </div>
+                            <div class="form-check form-check-inline disabled">
+                                <label class="form-check-label">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 6
                     </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-2">
-                                <label for="date" class="col-form-label">Date &amp; Time</label>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="input-group">
-                                            <label class="sr-only" for="inlineFormInput">Date</label>
-                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                            <input type="text" class="form-control mb-2 mb-sm-0 " id="inlineFormInput" placeholder="Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="input-group">
-                                            <label class="sr-only" for="inlineFormInput">Time</label>
-                                            <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
-                                            <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Time">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-md-2 col-md-10">
-                                <button class="btn btn-primary" type="submit">Reserve</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 hidden-sm"></div>
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <label for="date" class="col-form-label">Date &amp; Time</label>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <label class="sr-only" for="inlineFormInput">Date</label>
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input type="text" class="form-control mb-2 mb-sm-0 " id="inlineFormInput" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <label class="sr-only" for="inlineFormInput">Time</label>
+                                        <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                        <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button class="btn btn-primary" type="submit">Reserve</button>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-2 hidden-sm"></div>
             </div>
-
-            <!-- /Assignment Code -->
         </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5 offset-1 col-sm-2">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="./aboutus.html">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu</a>
-                            </li>
-                            <li>
-                                <a href="./contactus.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-sm-5">
-                        <h5>Our Address</h5>
-                        <address>
+        <!-- /Assignment Code -->
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="./aboutus.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="./contactus.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
             121, Clear Water Bay Road<br>
             Clear Water Bay, Kowloon<br>
             HONG KONG<br>
@@ -266,34 +261,34 @@
             <i class="fa fa-envelope fa-lg"></i>: <a href=
             "mailto:confusion@food.net">confusion@food.net</a>
           </address>
-                    </div>
-                    <div style="text-align:center">
-                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class=
+                </div>
+                <div style="text-align:center">
+                    <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class=
           "fa fa-facebook"></i></a> <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a> <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a> <a class="btn btn-social-icon"
-                            href="mailto:"><i class=
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a> <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a> <a class="btn btn-social-icon"
+                        href="mailto:"><i class=
           "fa fa-envelope-o"></i></a>
-                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <p>© Copyright 2015 Ristorante Con Fusion</p>
-                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2015 Ristorante Con Fusion</p>
             </div>
-        </footer>
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.min.js">
-        </script>
-        <script src="node_modules/tether/dist/js/tether.min.js">
-        </script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js">
-        </script>
-        <script>
-            $(document).ready(function() {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
+        </div>
+    </footer>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js">
+    </script>
+    <script src="node_modules/tether/dist/js/tether.min.js">
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
