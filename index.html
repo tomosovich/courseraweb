@@ -2,236 +2,254 @@
 <html lang="en">
 
 <head>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
     <!-- Bootstrap CSS -->
-
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-social.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FontAwesome    -->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BootStrap Social -->
+    <link href="css/bootstrap-social.css" rel="stylesheet">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-toggleable-sm navbar-fixed-top" style="background-color:#512DA8">
+    <!-- Navigation Bar -->
+    <!-- reversed colors, fixed to top blue background -->
+    <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
         <div class="container">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Navbar">
-                    <!--<span class="navbar-toggle-icon"></span>-->
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
-            </div>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" height="30" width="41"></a> <button class="navbar-toggler" data-target="#Navbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="Navbar">
-
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> MENU</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> CONTACT</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html"><span class=
+            "fa fa-info fa-lg"></span> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>
+            Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html"><span class=
+            "fa fa-address-card fa-lg"></span> Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="jumbotron" style="background-color: #9575CD">
+    <!-- Jumbotron Header -->
+    <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm-3 align-self-centre" style="margin-top:70px" ;>
-                    <img src="img/logo.png" class="img-fluid">
+                <div class="col col-sm align-self-center">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div>
-
-                <div class="col col-sm-3 align-self-centre task1" style="background-color:#FF8C00;margin-top:100px;">
-
-                    <div class="btn-group" role="group">
-                        <a role="button" class="btn" href="#reserveTable">Reserve a table</a>
-                    </div>
-
+                <div class="col-12 col-sm align-self-center">
+                    <a role="button" href="#Reservation" class="btn btn-block btn-sm nav-link btn-warning">
+                        Reserve a Table
+                    </a>
                 </div>
-
             </div>
         </div>
     </header>
-
+    <!-- /Jumbotron Header -->
     <div class="container">
-        <div class="row row-content align-items-centre">
-            <div class="col-sm-3  col-md-3 col-sm-push-9">
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col-sm-9 col-sm-pull-3">
+            <div class="col-sm col-md flex-first">
                 <div class="media">
-                    <div class="media-left media-middle">
-                        <img class="d-flex mr-3 img-thumbnail align-self-center media-object" src="img/uthappizza.png" alt="uthappizza">
-                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="label label-danger label-xs">HOT</span> <span class="badge badge-pill badge-defult">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza
+                            <span class="badge badge-danger">HOT</span>
+                            <span class="badge badge-pill badge-default">$4.99</span></h2>
                         <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row row-content align-items-centre">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-sm col-md">
+            <div class="col-sm-8 col-md-9">
                 <div class="media">
-
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="label label-danger label-xs">NEW</span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <h2 class="mt-0 mb-1">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
+                        </p>
+
                     </div>
-                    <div class="media-right media-middle">
-                        <img class="d-flex mr-3 img-thumbnail align-self-center media-object" src="img/buffet.png" alt="Weekend Grand Buffet">
-                    </div>
+                    <img src="img/buffet.png" alt="buffet" class="mt-0 ml-3">
                 </div>
             </div>
         </div>
 
-        <div class="row row-content align-items-centre">
-            <div class="col-sm-3 col-md-3 col-sm-push-9">
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col-sm-9  col-md-9 col-sm-pull-3">
+            <div class="col-sm col-md flex-first">
                 <div class="media">
-                    <div class="media-left media-middle">
-                        <img class="d-flex mr-3 img-thumbnail align-self-centre media-object" src="img/alberto.png" alt="Alberto Somayya">
-                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
                     <div class="media-body">
-                        <h2>Alberto Somayya</h2>
+                        <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row row-content task1">
-            <div class="col-sm-7 col-sm-push-2">
-                <div class="panel panel-primary">
-                    <div class="panel-heading" style="background-color:#FF8C00">
-                        <h4 classas="panel-title" id="reserveTable">Reserve a Table</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-sm">
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <label for="firstname" class="col-sm-2">Number of Guests</label>
-                                    <div class="col-sm-10">
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">1</label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">2</label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">3</label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">4</label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">5</label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">6</label>
+        <!-- Assignment Code -->
+
+        <div class="row row-content" id="Reservation">
+            <div class="col-md-2 hidden-sm"></div>
+            <div class="col-sm col-md-8">
+                <div class="card center-block" style="float:none">
+                    <h3 class="card-header bg-warning text-white">Make A Reservation</h3>
+                    <div class="card-block">
+                        <div class="form-group row">
+                            <label for="numberGuests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-md-10">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                    </label>
+                                </div>
+                                <div class="form-check form-check-inline disabled">
+                                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 3
+                    </label>
+                                </div>
+                                <div class="form-check form-check-inline disabled">
+                                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 4
+                    </label>
+                                </div>
+                                <div class="form-check form-check-inline disabled">
+                                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 5
+                    </label>
+                                </div>
+                                <div class="form-check form-check-inline disabled">
+                                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 6
+                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <label for="date" class="col-form-label">Date &amp; Time</label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="inlineFormInput">Date</label>
+                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                            <input type="text" class="form-control mb-2 mb-sm-0 " id="inlineFormInput" placeholder="Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="inlineFormInput">Time</label>
+                                            <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                            <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Time">
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="firstname" class="col-sm-2">Date and Time</label>
-                                    <div class="col-5 col-md-3 col-sm-4">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-7 col-md-3 col-sm-6">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
-                                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="form-group row">
-                                        <div class="offset-md-2 col-md-10 col-sm-push-2">
-                                            <button type="submit" class="btn btn-primary">Reserve</button>
-                                        </div>
-                                    </div>
-                            </form>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button class="btn btn-primary" type="submit">Reserve</button>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-2 hidden-sm"></div>
                 </div>
             </div>
 
+            <!-- /Assignment Code -->
         </div>
 
         <footer class="footer">
             <div class="container">
-                <div class="row ">
+                <div class="row">
                     <div class="col-5 offset-1 col-sm-2">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./abt.html">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="./contactus.html">Contact</a></li>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="./aboutus.html">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu</a>
+                            </li>
+                            <li>
+                                <a href="./contactus.html">Contact</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-6 col-sm-5">
                         <h5>Our Address</h5>
                         <address>
-                            121, Clear Water Bay Road<br> Clear Water Bay, Kowloon<br> HONG KONG<br>
-                            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                            <i class="fa fa-envelope fa-lg"></i>:
-                            <a href="mailto:confusion@food.net">confusion@food.net</a>
-                        </address>
+            121, Clear Water Bay Road<br>
+            Clear Water Bay, Kowloon<br>
+            HONG KONG<br>
+            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+            <i class="fa fa-envelope fa-lg"></i>: <a href=
+            "mailto:confusion@food.net">confusion@food.net</a>
+          </address>
                     </div>
-                    <div class="col col-sm-4">
-                        <div style="text-align:center">
-                            <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row justify-content-centre">
-                    <div class="col-auto">
-                        <p>© Copyright 2015 Ristorante Con Fusion</p>
+                    <div style="text-align:center">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class=
+          "fa fa-facebook"></i></a> <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a> <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a> <a class="btn btn-social-icon"
+                            href="mailto:"><i class=
+          "fa fa-envelope-o"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2015 Ristorante Con Fusion</p>
+                </div>
+            </div>
         </footer>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.min.js">
+        </script>
+        <script src="node_modules/tether/dist/js/tether.min.js">
+        </script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js">
+        </script>
 </body>
 
 </html>
