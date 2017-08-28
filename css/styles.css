@@ -64,3 +64,12 @@ body {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
+.page-title {
+  color: #512da8;
+  font-weight: 10;
+  line-height: 1.4em;
+  font-style: italic;
+}
+.box {
+  padding-top: 25px;
+}
