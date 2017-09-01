@@ -2,6 +2,7 @@
     "name": "confusion",
     "version": "1.0.0",
     "description": "This is a website for Ristorante Con Fusion",
+    "repository": "https://github.com/tomosovich/courseraweb",
     "main": "aboutus.html",
     "scripts": {
         "start": "npm run watch:all",
@@ -20,12 +21,18 @@
     "license": "ISC",
     "devDependencies": {
         "cssmin": "^0.4.3",
+        "grunt": "^1.0.1",
+        "grunt-browser-sync": "^2.2.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-sass": "^2.0.0",
         "htmlmin": "0.0.7",
+        "jit-grunt": "^0.10.0",
         "lite-server": "^2.2.2",
         "node-sass": "^4.5.3",
         "onchange": "^3.2.1",
         "parallelshell": "^3.0.1",
         "rimraf": "^2.6.1",
+        "time-grunt": "^1.4.0",
         "uglifyjs": "^2.4.11",
         "usemin-cli": "^0.5.1"
     },
